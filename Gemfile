@@ -17,20 +17,20 @@ gem 'mime-types', '~> 3.3', require: 'mime/types/columnar'
 
 # Gems required in all environments
 if ENV["RAILS_MASTER"] == '1'
-  gem 'rails', git: 'https://github.com/rails/rails.git'
+  gem 'rails', '>= 6.1.4.1', git: 'https://github.com/rails/rails.git'
 else
-  gem 'rails', '6.1.4'
+  gem 'rails', '6.1.4.1'
 end
 
 gem 'bluecloth'
 gem 'dalli'
 gem 'devise', github: "heartcombo/devise"
 gem 'git_hub_bub'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.4.0'
 gem 'local_time', '2.1.0'
-gem 'maildown', '~> 3.3'
+gem 'maildown', '~> 3.3', '>= 3.3.0'
 gem 'omniauth', '~> 2.0.3'
-gem 'omniauth-rails_csrf_protection'
+gem 'omniauth-rails_csrf_protection', '>= 1.0.0'
 gem 'omniauth-github'
 gem 'pg'
 gem 'puma'
@@ -38,18 +38,18 @@ gem 'rack-timeout'
 gem 'rrrretry'
 gem 'valid_email'
 gem 'warden', '1.2.9'
-gem 'wicked'
+gem 'wicked', '>= 1.3.4'
 gem 'will_paginate', '3.3.0'
 # gem 'sass-rails', '6.0.0.beta1'
 gem 'sassc'
-gem 'sassc-rails'
+gem 'sassc-rails', '>= 2.1.2'
 
 gem 'autoprefixer-rails', '~> 10.2.4'
 gem 'bourbon'
 gem 'coffee-rails', '~> 5.0.0'
 gem 'neat', '~> 1.7'
 gem 'normalize-rails'
-gem 'slim-rails'
+gem 'slim-rails', '>= 3.2.0'
 gem 'uglifier', '>= 1.0.3'
 gem 'render_async', '~> 2.1'
 
@@ -57,7 +57,7 @@ group :development do
   gem 'bullet', require: false, github: 'flyerhzm/bullet'
   gem 'foreman'
   gem 'listen'
-  gem 'web-console'
+  gem 'web-console', '>= 4.1.0'
   gem 'memory_profiler'
 end
 
@@ -66,7 +66,7 @@ group :test do
   # Not essential but helpful for save_and_open_page
   gem 'launchy'
   gem 'mocha', require: false
-  gem 'rails-controller-testing'
+  gem 'rails-controller-testing', '>= 1.0.5'
   gem 'simplecov', require: false
   gem 'vcr'
   gem 'webmock'
@@ -94,7 +94,7 @@ gem 'aws-sdk-s3', '~> 1.89.0'
 gem 'mail', require: ['mail', 'mail/utilities', 'mail/parsers'] # parsers is used by `valid_email` and may be causing https://github.com/mikel/mail/issues/912#issuecomment-170121429
 
 gem 'sprockets', github: "rails/sprockets"
-gem 'sprockets-rails'
+gem 'sprockets-rails', '>= 3.2.2'
 
 gem 'babel-transpiler'
 
@@ -115,7 +115,7 @@ gem 'skylight', '~> 5.0.1'
 
 gem 'minitest', '5.14.4'
 gem 'sitemap_generator'
-gem 'premailer-rails'
+gem 'premailer-rails', '>= 1.11.1'
 
 # gem 'barnes'
 gem 'puma_worker_killer'
