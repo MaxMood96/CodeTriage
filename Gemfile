@@ -17,9 +17,9 @@ gem 'mime-types', '~> 3.3', require: 'mime/types/columnar'
 
 # Gems required in all environments
 if ENV["RAILS_MASTER"] == '1'
-  gem 'rails', git: 'https://github.com/rails/rails.git'
+  gem 'rails', '>= 6.1.4.7', git: 'https://github.com/rails/rails.git'
 else
-  gem 'rails', '6.1.4.1'
+  gem 'rails', '6.1.4.7'
 end
 
 gem 'bluecloth'
