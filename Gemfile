@@ -17,7 +17,7 @@ gem 'mime-types', '~> 3.3', require: 'mime/types/columnar'
 
 # Gems required in all environments
 if ENV["RAILS_MASTER"] == '1'
-  gem 'rails', git: 'https://github.com/rails/rails.git'
+  gem 'rails', '>= 6.1.4.1', git: 'https://github.com/rails/rails.git'
 else
   gem 'rails', '6.1.4.1'
 end
@@ -28,7 +28,7 @@ gem 'devise', github: "heartcombo/devise"
 gem 'git_hub_bub'
 gem 'jquery-rails'
 gem 'local_time', '2.1.0'
-gem 'maildown', '~> 3.3'
+gem 'maildown', '~> 3.3', '>= 3.3.0'
 gem 'omniauth', '~> 2.0.4'
 gem 'omniauth-rails_csrf_protection'
 gem 'omniauth-github'
