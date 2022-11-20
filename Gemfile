@@ -23,7 +23,7 @@ else
 end
 
 gem 'bluecloth'
-gem 'dalli'
+gem 'dalli', '>= 3.2.3'
 gem 'devise', github: "heartcombo/devise"
 gem 'git_hub_bub'
 gem 'jquery-rails'
