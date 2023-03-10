@@ -28,7 +28,7 @@ gem 'devise', github: "heartcombo/devise"
 gem 'git_hub_bub'
 gem 'jquery-rails'
 gem 'local_time', '2.1.0'
-gem 'maildown', '~> 3.3'
+gem 'maildown', '~> 3.3', '>= 3.3.0'
 gem 'omniauth', '~> 2.0.4'
 gem 'omniauth-rails_csrf_protection'
 gem 'omniauth-github'
