@@ -17,23 +17,23 @@ gem 'mime-types', '~> 3.3', require: 'mime/types/columnar'
 
 # Gems required in all environments
 if ENV["RAILS_MASTER"] == '1'
-  gem 'rails', git: 'https://github.com/rails/rails.git'
+  gem 'rails', '>= 6.1.7.3', git: 'https://github.com/rails/rails.git'
 else
-  gem 'rails', '6.1.4.1'
+  gem 'rails', '6.1.7.3'
 end
 
 gem 'bluecloth'
-gem 'dalli'
+gem 'dalli', '>= 3.2.3'
 gem 'devise', github: "heartcombo/devise"
 gem 'git_hub_bub'
 gem 'jquery-rails'
 gem 'local_time', '2.1.0'
-gem 'maildown', '~> 3.3'
-gem 'omniauth', '~> 2.0.4'
+gem 'maildown', '~> 3.3', '>= 3.3.0'
+gem 'omniauth', '~> 2.1.0'
 gem 'omniauth-rails_csrf_protection'
 gem 'omniauth-github'
 gem 'pg'
-gem 'puma'
+gem 'puma', '>= 5.6.4'
 gem 'rack-timeout'
 gem 'rrrretry'
 gem 'valid_email'
@@ -86,8 +86,8 @@ gem 'rack-mini-profiler'
 
 gem 'the_lone_dyno'
 
-gem 'sidekiq'
-gem 'sinatra', '~> 2.1.0'
+gem 'sidekiq', '>= 7.0.0'
+gem 'sinatra', '~> 2.2.3'
 
 gem 'aws-sdk-s3', '~> 1.103.0'
 
