@@ -102,7 +102,7 @@ gem 'scout_apm', '~> 4.1.2'
 gem 'yard', '~> 0.9.26'
 
 gem 'oj'
-gem 'rack-canonical-host'
+gem 'rack-canonical-host', '>= 1.2.0'
 gem 'sentry-raven'
 
 gem 'bootsnap', require: false

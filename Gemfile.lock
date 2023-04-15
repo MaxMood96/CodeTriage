@@ -94,8 +94,8 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
-    addressable (2.8.0)
-      public_suffix (>= 2.0.2, < 5.0)
+    addressable (2.8.4)
+      public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
     autoprefixer-rails (10.2.4.0)
       execjs
@@ -284,17 +284,17 @@ GEM
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
-    public_suffix (4.0.6)
+    public_suffix (5.0.1)
     puma (5.5.0)
       nio4r (~> 2.0)
     puma_worker_killer (0.3.1)
       get_process_mem (~> 0.2)
       puma (>= 2.7)
     racc (1.5.2)
-    rack (2.2.3)
-    rack-canonical-host (1.0.0)
+    rack (2.2.6.4)
+    rack-canonical-host (1.2.0)
       addressable (> 0, < 3)
-      rack (>= 1.0.0, < 3)
+      rack (>= 1, < 4)
     rack-mini-profiler (2.3.3)
       rack (>= 1.2.0)
     rack-protection (2.1.0)
@@ -504,7 +504,7 @@ DEPENDENCIES
   pry
   puma
   puma_worker_killer
-  rack-canonical-host
+  rack-canonical-host (>= 1.2.0)
   rack-mini-profiler
   rack-timeout
   rails (= 6.1.4.1)
@@ -546,4 +546,4 @@ RUBY VERSION
    ruby 3.0.2p107
 
 BUNDLED WITH
-   2.2.22
+   2.1.4
