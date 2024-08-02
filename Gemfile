@@ -28,7 +28,7 @@ gem 'devise', github: "heartcombo/devise"
 gem 'git_hub_bub'
 gem 'jquery-rails'
 gem 'local_time', '2.1.0'
-gem 'maildown', '~> 3.3'
+gem 'maildown', '~> 3.3', '>= 3.3.1'
 gem 'omniauth', '~> 2.0.4'
 gem 'omniauth-rails_csrf_protection'
 gem 'omniauth-github'
@@ -69,7 +69,7 @@ group :test do
   gem 'rails-controller-testing'
   gem 'simplecov', require: false
   gem 'vcr'
-  gem 'webmock'
+  gem 'webmock', '>= 3.15.1'
   gem 'test-prof'
 end
 
@@ -78,8 +78,8 @@ group :development, :test do
   gem 'dotenv-rails', '2.7.6'
   gem 'faker', require: false
   gem 'pry'
-  gem 'rubocop', require: false
-  gem 'rubocop-performance'
+  gem 'rubocop', '>= 1.22.0', require: false
+  gem 'rubocop-performance', '>= 1.12.0'
 end
 
 gem 'rack-mini-profiler'
