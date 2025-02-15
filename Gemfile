@@ -17,9 +17,9 @@ gem 'mime-types', '~> 3.3', require: 'mime/types/columnar'
 
 # Gems required in all environments
 if ENV["RAILS_MASTER"] == '1'
-  gem 'rails', git: 'https://github.com/rails/rails.git'
+  gem 'rails', '>= 7.0.0', git: 'https://github.com/rails/rails.git'
 else
-  gem 'rails', '6.1.4.1'
+  gem 'rails', '7.0.0'
 end
 
 gem 'bluecloth'
@@ -79,7 +79,7 @@ group :development, :test do
   gem 'faker', require: false
   gem 'pry'
   gem 'rubocop', require: false
-  gem 'rubocop-performance'
+  gem 'rubocop-performance', '>= 1.24.0'
 end
 
 gem 'rack-mini-profiler'
