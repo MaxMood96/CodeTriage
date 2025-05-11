@@ -17,9 +17,9 @@ gem 'mime-types', '~> 3.3', require: 'mime/types/columnar'
 
 # Gems required in all environments
 if ENV["RAILS_MASTER"] == '1'
-  gem 'rails', git: 'https://github.com/rails/rails.git'
+  gem 'rails', '>= 7.0.0', git: 'https://github.com/rails/rails.git'
 else
-  gem 'rails', '6.1.4.1'
+  gem 'rails', '7.0.0'
 end
 
 gem 'bluecloth'
@@ -86,8 +86,8 @@ gem 'rack-mini-profiler'
 
 gem 'the_lone_dyno'
 
-gem 'sidekiq'
-gem 'sinatra', '~> 2.1.0'
+gem 'sidekiq', '>= 8.0.0'
+gem 'sinatra', '~> 4.0.0'
 
 gem 'aws-sdk-s3', '~> 1.103.0'
 
