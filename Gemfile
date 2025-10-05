@@ -78,8 +78,8 @@ group :development, :test do
   gem 'dotenv-rails', '2.7.6'
   gem 'faker', require: false
   gem 'pry'
-  gem 'rubocop', require: false
-  gem 'rubocop-performance'
+  gem 'rubocop', '>= 1.66.0', require: false
+  gem 'rubocop-performance', '>= 1.12.0'
 end
 
 gem 'rack-mini-profiler'
