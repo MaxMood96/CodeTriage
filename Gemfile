@@ -31,7 +31,7 @@ gem 'local_time', '2.1.0'
 gem 'maildown', '~> 3.3'
 gem 'omniauth', '~> 2.0.4'
 gem 'omniauth-rails_csrf_protection'
-gem 'omniauth-github'
+gem 'omniauth-github', '>= 2.0.1'
 gem 'pg'
 gem 'puma'
 gem 'rack-timeout'
@@ -103,7 +103,7 @@ gem 'yard', '~> 0.9.26'
 
 gem 'oj'
 gem 'rack-canonical-host'
-gem 'sentry-raven'
+gem 'sentry-raven', '>= 3.0.0'
 
 gem 'bootsnap', require: false
 gem 'rbtrace'
